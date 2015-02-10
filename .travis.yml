@@ -1,22 +1,25 @@
 language: node_js
 node_js:
-  - "0.10"
+- '0.10'
 env:
   global:
-    - GIT_COMMITTER_NAME="Travis ci"
-    - GIT_COMMITTER_EMAIL=noreply@github.com
-    - GIT_AUTHOR_NAME="Travis ci"
-    - GIT_AUTHOR_EMAIL=noreply@github.com
-    - secure: "CBScJ1P4vpF3PsMBjxjWaIHAyAFUPLsKCm6JZ08rssqMEhGysyXtyZJoSy5rua85VdYZjahUqizbmekUAYbA49x0a4YeoGbzsN3TkPRTkl93j1GdtE3PO0L7tgL5OmOoWuB0SE8A3SAW9kMWqRWUOaYgd0kMtaOvSZE9v93UTFw="
+  - GIT_COMMITTER_NAME="Travis ci"
+  - GIT_COMMITTER_EMAIL=noreply@github.com
+  - GIT_AUTHOR_NAME="Travis ci"
+  - GIT_AUTHOR_EMAIL=noreply@github.com
+  - secure: CBScJ1P4vpF3PsMBjxjWaIHAyAFUPLsKCm6JZ08rssqMEhGysyXtyZJoSy5rua85VdYZjahUqizbmekUAYbA49x0a4YeoGbzsN3TkPRTkl93j1GdtE3PO0L7tgL5OmOoWuB0SE8A3SAW9kMWqRWUOaYgd0kMtaOvSZE9v93UTFw=
+  - secure: gPSH/4CLPFw/8NNCcrKX16/nP71cofD/+wsHjJrCiMpZb2xklFnOaSBrCgF4nXdfTBPpRJ7vbmSx7KF3WnaW4+9te6txcLNGpvGLmCTcHB9CbCfocYWIeIdAQboklcW2Hb77L1t7RDsWwca6rk76D9eD7IbckL1SROZeiy4Fxo4=
 before_script:
-  - npm install -g gulp
-  - git clone --quiet -b gh-pages https://github.com/RecoTwExplorer/tana3n.black dest
-  - pushd dest
-  - git checkout gh-pages
-  - popd
+- npm install -g gulp
+- git clone --quiet -b gh-pages https://github.com/RecoTwExplorer/tana3n.black dest
+- pushd dest
+- git checkout gh-pages
+- popd
 script: gulp
 after_success:
-  - cd dest
-  - git add -A
-  - git commit -m "update $TRAVIS_COMMIT"
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && git push --quiet https://$GH_TOKEN@github.com/RecoTwExplorer/tana3n.black.git gh-pages 2> /dev/null'
+- cd dest
+- git add -A
+- git commit -m "update $TRAVIS_COMMIT"
+- '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && [ "$TRAVIS_PULL_REQUEST" ==
+  "false" ] && git push --quiet https://$GH_TOKEN@github.com/RecoTwExplorer/tana3n.black.git
+  gh-pages 2> /dev/null'
