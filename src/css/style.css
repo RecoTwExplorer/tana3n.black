@@ -1,6 +1,7 @@
 html {
     background: #5b5b5b;
     padding: 5px 10px;
+    font-family: sans-serif;
     margin-top: 67px;
 }
 a {
@@ -57,6 +58,7 @@ blockquote img {
 }
 blockquote p {
     font-size: 18px;
+    color: #cfcfcf;
     margin: 5px 0 0;
     word-break: break-all;
 }
@@ -68,4 +70,27 @@ blockquote p {
 }
 #main-area iframe:first-child, #main-area blockquote:first-child {
     margin-top: 0 !important;
+}
+#main-area iframe:last-child, #main-area blockquote:last-child {
+    margin-bottom: 0 !important;
+}
+@media (max-width: 480px) {
+    html {
+        margin-top: 42px;
+        padding: 0;
+    }
+    header {
+        height: 20px;
+        font-size: 18px;
+        padding: 8px 0 12px;
+    }
+    blockquote {
+        font-size: 12px;
+    }
+    blockquote p {
+        font-size: 16px;
+    }
+    blockquote, .twitter-tweet-rendered {
+        margin: 10px auto !important;
+    }
 }
