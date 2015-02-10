@@ -7,7 +7,7 @@ env:
     - GIT_COMMITTER_EMAIL=noreply@github.com
     - GIT_AUTHOR_NAME="Travis ci"
     - GIT_AUTHOR_EMAIL=noreply@github.com
-    - secure: "iLUUc/LmjRCozVzudYdTk2nkhonLZ5BL2acguMjGV5ds2Wh6rcy+qvqOE456MpU+sggXtJHwPD5A8cJZyo++iWLUSvOB9GBdi3tfXCsW6/VofhMU8sOzpmGNbJdnTUn6XF0CY06Dw9xVLIaasHl/Zc3Y5g/csJbB+ab+pv1Naaw="
+    - secure: "CBScJ1P4vpF3PsMBjxjWaIHAyAFUPLsKCm6JZ08rssqMEhGysyXtyZJoSy5rua85VdYZjahUqizbmekUAYbA49x0a4YeoGbzsN3TkPRTkl93j1GdtE3PO0L7tgL5OmOoWuB0SE8A3SAW9kMWqRWUOaYgd0kMtaOvSZE9v93UTFw="
 before_script:
   - npm install -g gulp
   - git clone --quiet -b gh-pages https://github.com/RecoTwExplorer/tana3n.black dest
