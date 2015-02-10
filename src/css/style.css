@@ -74,6 +74,26 @@ blockquote p {
 #main-area iframe:last-child, #main-area blockquote:last-child {
     margin-bottom: 0 !important;
 }
+
+body::-webkit-scrollbar {
+    width:6px;
+    background:none;
+}
+body::-webkit-scrollbar:horizontal {
+    height:10px;
+}
+body::-webkit-scrollbar-button {
+    display:none;
+}
+body::-webkit-scrollbar-thumb {
+    background: rgba(51, 51, 51, 0.88);
+    border-radius:4px;
+}
+body::-webkit-scrollbar-corner {
+    background:#ddd;
+}
+
+
 @media (max-width: 480px) {
     html {
         margin-top: 42px;
