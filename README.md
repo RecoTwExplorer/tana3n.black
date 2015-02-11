@@ -15,6 +15,9 @@ Internet Explorer 10 以上、Google Chrome、Firefox 上で動作すること�
 Node.js v0.10 上で `gulp` を実行することでビルドでき、その結果は `/dest/*` 以下に出力されます。
 
 ```
+$ # node未導入の場合
+$ # sudo apt-get install nodejs-legacy
+$ # yum?知りません。
 $ npm install
 $ npm install -g gulp
 $ gulp
