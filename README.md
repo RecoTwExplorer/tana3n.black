@@ -17,6 +17,10 @@ Node.js v0.10 上で `gulp` を実行することでビルドでき、その結�
 ```
 $ # node未導入の場合
 $ # curl -L git.io/nodebrew | perl - setup
+$ # echo 'export PATH=$HOME/.nodebrew/current/bin'>>~/.bashrc
+$ # source .bashrc
+$ # nodebrew install-binary stable
+$ # nodebrew use stable
 
 $ npm install
 $ npm install -g gulp
