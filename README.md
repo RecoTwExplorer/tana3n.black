@@ -16,8 +16,8 @@ Node.js v0.10 上で `gulp` を実行することでビルドでき、その結�
 
 ```
 $ # node未導入の場合
-$ # sudo apt-get install nodejs-legacy
-$ # yum?知りません。
+$ # curl -L git.io/nodebrew | perl - setup
+
 $ npm install
 $ npm install -g gulp
 $ gulp
