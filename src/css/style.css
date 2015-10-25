@@ -22,10 +22,10 @@ header {
 blockquote, .twitter-tweet-rendered {
     margin: 20px auto !important;
     width: 99% !important;
-    background: #333333;
-    color: #a9a9a9;
-    border: none !important;
-    border-radius: 0 !important;
+    background: #000000;
+    color: #f5f8fa;
+    border: 1px solid #66757f;
+    border-radius: 4px;
     box-shadow: none !important;
     font-size: 14px;
     padding: 15px;
@@ -38,13 +38,13 @@ blockquote, .twitter-tweet-rendered {
 blockquote hr {
     margin: 10px 0 15px;
     border: 0;
-    border-top: 1px solid #444444;
+    border-top: 1px solid #66757f;
 }
 blockquote div {
     text-align: left;
 }
 blockquote span a {
-    color: #bbbbbb;
+    color: #8899a6;
     text-decoration: none;
     font: normal normal normal 14px/18px "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
 }
