@@ -22,11 +22,10 @@ module Tana3n {
     export class App {
         public static load(entries: RecoTwEntry[]): void {
             var mainArea = document.getElementById("main-area");
-            var options: TwitterTweetWidgetOptions = { lang: "ja", theme: "dark" };
 
             entries.sort((x, y) => Math.random() - .5);
             twttr.ready(() => entries.forEach((item, i) => {
-                twttr.widgets.createTweet(item.tweet_id, mainArea, options).then(App.onStatusCreated.bind(null, item, i));
+                twttr.widgets.createTweet(item.tweet_id, mainArea, { lang: "ja", theme: "dark" }).then(App.onStatusCreated.bind(null, item, i));
             }));
         }
 
